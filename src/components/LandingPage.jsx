@@ -19,7 +19,7 @@ function LandingPage(props) {
           <div className="landing-page-text">
             <h1 style={{ fontFamily: 'Roboto Slab, serif' }}>Welcome to TASK-TRAIN</h1>
             <p style={{ fontFamily: 'Open Sans, sans-serif' }}>Manage your todos efficiently with my app</p>
-            <p style={{ fontFamily: 'Open Sans, sans-serif' }}>Sign up or log in to get started</p>
+            {user?null:<p style={{ fontFamily: 'Open Sans, sans-serif' }}>Sign up or log in to get started</p>}
           </div>
           <img src={image} alt="Project management app" className="landing-page-image" />
         </div>
