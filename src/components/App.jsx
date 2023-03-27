@@ -7,7 +7,7 @@ import Login from './login/Login';
 import SignUp from './login/SignUp';
 // import LandingPage from './LandingPage';
 import MyTodos from './MyTodos';
-// import ProjectForm from './ProjectForm';
+import TodoForm from './TodoForm';
 // import UpdateProjectForm from './UpdateProjectForm';
 
 function App() {
@@ -27,6 +27,10 @@ function App() {
         <Route
         path="/my-todos"
         element={<MyTodos/>}
+        />
+        <Route
+        path="/project-form"
+        element={<TodoForm />}
         />
       </Routes>
     </div>
