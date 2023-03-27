@@ -5,7 +5,7 @@ import viteLogo from '/vite.svg'
 import '../stylesheets/App.css';
 import Login from './login/Login';
 import SignUp from './login/SignUp';
-// import LandingPage from './LandingPage';
+import LandingPage from './LandingPage';
 import MyTodos from './MyTodos';
 import TodoForm from './TodoForm';
 import UpdateTodoForm from './UpdateTodoForm';
@@ -16,6 +16,10 @@ function App() {
   return (
     <div className="App">
       <Routes>
+        <Route
+          exact path="/"
+          element={<LandingPage />}
+        />
         <Route
           path="/login"
           element={<Login />}
