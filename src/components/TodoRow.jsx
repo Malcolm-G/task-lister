@@ -139,7 +139,7 @@ function TodoRow({todo,index}) {
             <button
             onClick={()=>{
                 if(window.confirm('Are you sure you wish to delete this project?')){
-                    deleteProject()
+                    deleteTodo()
                 }
             }}
             className='btn btn-danger btn-sm'
