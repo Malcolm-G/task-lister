@@ -1,21 +1,21 @@
 import React, { useContext, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-// import TodoRow from './TodoRow';
+import TodoRow from './TodoRow';
 import { UserContext } from './UserDataProvider';
 
 function MyTodos(props) {
 
     const [user,setUser,API,todos] = useContext(UserContext)
 
-    // const todoList = todos?.map((todo,index)=>{
-    //     return(
-    //         <TodoRow
-    //         key={`projectList`+project.id}
-    //         index={index+1}
-    //         project={todo}
-    //         />
-    //     )
-    // })
+    const todoList = todos?.map((todo,index)=>{
+        return(
+            <TodoRow
+            key={`todoList`+todo.id}
+            index={index+1}
+            todo={todo}
+            />
+        )
+    })
 
 
 
@@ -39,7 +39,7 @@ function MyTodos(props) {
                         </tr>
                     </thead>
                     <tbody>
-                        {/* {todoList} */}
+                        {todoList}
                     </tbody>
                 </table>
             </div>
