@@ -6,7 +6,7 @@ import { BsPersonCircle } from 'react-icons/bs';
 import { UserContext } from "../UserDataProvider";
 // import image from "../../random-acts-kindness-day.png";
 
-function Login({users,setIsLoggedIn,setCurrentUser}){
+function Login(props){
 
     const [username,setUsername] = useState("");
     const [password,setPassword] = useState("");
@@ -20,7 +20,7 @@ function Login({users,setIsLoggedIn,setCurrentUser}){
         e.preventDefault()
         if (username){
             setUser(user=>user = {username:username})
-            localStorage.setItem('user', JSON.stringify(user))
+            localStorage.setItem('user', JSON.stringify({username:username}))
             navigate('/')
         }
         else{

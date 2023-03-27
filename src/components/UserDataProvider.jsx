@@ -6,7 +6,7 @@ const API = 'http://127.0.0.1:3000'
 
 // create the context provider (component)
 function UserDataProvider({ children }) {
-    const [user, setUser] = useState({username:"Malcolm"})
+    const [user, setUser] = useState(null)
     const [todos, setTodos] = useState([
         {
             id:0,
@@ -30,6 +30,15 @@ function UserDataProvider({ children }) {
             priority:'HIGH'
         }
     ])
+
+    useEffect(() => {
+        const loggedInUser = localStorage.getItem('user');
+        if (loggedInUser) {
+          const foundUser = JSON.parse(loggedInUser);
+        //   console.log(foundUser)
+          setUser(foundUser);
+        }
+    }, []);
 
 
     const value = [user, setUser,API,todos,setTodos]
