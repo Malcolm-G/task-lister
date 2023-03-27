@@ -69,7 +69,7 @@ If you wish to run application from cloned repository:
 If you wish to access the application without cloning it to your computer,simply follow this simple step:
 - Access the website by going to the following link:
    
-                https://p3-project-app-frontend.vercel.app/
+                https://task-train-frontend.vercel.app/
 
 
 ---
@@ -96,19 +96,17 @@ If you wish to create your own account, click the button **'Register?'** and you
 
 After logging in, you shall be returned to the home page:
 
-![After Login Screenshot](src/images/after_login_screenshot.png)
+![After Login Screenshot](src/images/after_login_screen.png)
 
-You now have the option **'MY-PROJECTS'** on the navbar. Click the option and you'll view your projects. Below are the projects of the dummy account that was mentioned beforehand:
+You now have the option **'MY-TODOS'** on the navbar. Click the option and you'll view your todos. Below are the todos of the dummy account that was mentioned beforehand:
 
-![My Projects Screenshot](src/images/my_projects_screenshot.png)
+![My Todos Screenshot](src/images/my_todos_screen.png)
 
-You may click the **'Add Project'** button to create a new project. It shall direct you to a form:
+You may click the **'Add Todo'** button to create a new todo. It shall direct you to a form:
 
-![Add Project Screenshot](src/images/add_project_screenshot.png)
+![Add Todo Screenshot](src/images/add_todo_screen.png)
 
-You also have the options to update and delete projects that you own. The update and delete buttons are disbled if you are not the project owner. The update button shall direct you to a form that is prepopulated with the data that is currently tied to the project. You may change any field to update the project.
-
-The project status can as well be changed by any member or project owner by choosing an option in the status dropdown.
+The update button shall direct you to a form that is prepopulated with the data that is currently tied to the todo. You may change any field to update the todo.
 
 
 ## Authors
