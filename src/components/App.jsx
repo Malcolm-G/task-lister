@@ -8,7 +8,7 @@ import SignUp from './login/SignUp';
 // import LandingPage from './LandingPage';
 import MyTodos from './MyTodos';
 import TodoForm from './TodoForm';
-// import UpdateProjectForm from './UpdateProjectForm';
+import UpdateTodoForm from './UpdateTodoForm';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -31,6 +31,10 @@ function App() {
         <Route
         path="/project-form"
         element={<TodoForm />}
+        />
+        <Route
+        path="/update-todo-form/:id"
+        element={<UpdateTodoForm />}
         />
       </Routes>
     </div>

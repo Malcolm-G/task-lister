@@ -54,7 +54,7 @@ function TodoRow({todo,index}) {
     },[todo])
 
     function updateTodo(){
-        navigate(`/update-project-form/${project.id}`)
+        navigate(`/update-todo-form/${todo.id}`)
     }
 
     function changeStatus(e){
