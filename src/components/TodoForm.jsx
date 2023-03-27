@@ -23,7 +23,7 @@ function TodoForm(props) {
     }
 
     return (
-        <form onSubmit={(e)=>projectSubmit(e)} style={{border:"1px solid #ccc"}}>
+        <form className='log-form' onSubmit={(e)=>projectSubmit(e)} style={{border:"1px solid #ccc"}}>
             <div className="container bg-body-tertiary mt-5">
                 <h1>Todo Details</h1>
                 <p>Please fill in this form to add a new todo.</p>
