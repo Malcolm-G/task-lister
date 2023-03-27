@@ -34,7 +34,7 @@ function Login({users,setIsLoggedIn,setCurrentUser}){
             </div>
 
             <div className="container login-container bg-body-tertiary">
-                <label htmlFor="username"><b>Email</b></label>
+                <label htmlFor="username"><b>Username</b></label>
                 <input
                 onChange={(e)=>setUsername(e.target.value)}
                 value={username}
