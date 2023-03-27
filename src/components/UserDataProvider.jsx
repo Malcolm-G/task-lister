@@ -7,7 +7,29 @@ const API = 'http://127.0.0.1:3000'
 // create the context provider (component)
 function UserDataProvider({ children }) {
     const [user, setUser] = useState({username:"Malcolm"})
-    const [todos, setTodos] = useState([])
+    const [todos, setTodos] = useState([
+        {
+            id:0,
+            title:"First Todo",
+            description:'This is the first todo ever made',
+            status:'CREATED',
+            priority:'MEDIUM'
+        },
+        {
+            id:1,
+            title:"Second Todo",
+            description:'This is the second todo ever made',
+            status:'CREATED',
+            priority:'LOW'
+        },
+        {
+            id:2,
+            title:"Third Todo",
+            description:'This is the third todo ever made',
+            status:'CREATED',
+            priority:'HIGH'
+        }
+    ])
 
 
     const value = [user, setUser,API,todos,setTodos]
