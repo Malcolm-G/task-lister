@@ -2,7 +2,7 @@ import React,{ useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import '../../stylesheets/Login.css';
 // import image from "../../images/download.png"
-// import { BsPersonCircle } from 'react-icons/bs';
+import { BsPersonCircle } from 'react-icons/bs';
 import { UserContext } from "../UserDataProvider";
 // import image from "../../random-acts-kindness-day.png";
 
@@ -30,7 +30,7 @@ function Login({users,setIsLoggedIn,setCurrentUser}){
          method="#">
             <div className="log-imgcontainer">
                 {/* <img src={image} alt="Avatar" className="log-avatar"/> */}
-                {/* <BsPersonCircle size={140} /> */}
+                <BsPersonCircle size={140} />
             </div>
 
             <div className="container login-container bg-body-tertiary">
