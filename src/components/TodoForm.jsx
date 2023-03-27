@@ -13,33 +13,33 @@ function TodoForm(props) {
 
     function projectSubmit(e){
         e.preventDefault()
-            setProjects((projects)=>[...projects,input])
+            setTodos((todos)=>[...todos,input])
             window.alert("New Project Created")
-            navigate("/my-projects");
+            navigate("/my-todos");
     }
 
     function cancelClicked(){
-        navigate("/my-projects");
+        navigate("/my-todos");
     }
 
     return (
         <form onSubmit={(e)=>projectSubmit(e)} style={{border:"1px solid #ccc"}}>
             <div className="container bg-body-tertiary mt-5">
-                <h1>Project Details</h1>
-                <p>Please fill in this form to add a new project.</p>
+                <h1>Todo Details</h1>
+                <p>Please fill in this form to add a new todo.</p>
                 <hr/>
 
                 <label htmlFor="title"><b>Title</b></label>
                 <input
                 onChange={(e)=>setTitle(e.target.value)}
                 value={title}
-                type="text" placeholder="Enter Project Title" name="title" required/>
+                type="text" placeholder="Enter Todo Title" name="title" required/>
 
                 <label htmlFor="description"><b>Description</b></label>
                 <input
                 onChange={(e)=>setDescription(e.target.value)}
                 value={description}
-                type="text" placeholder="Enter Project Description" name="description" required/>
+                type="text" placeholder="Enter Todo Description" name="description" required/>
 
                 <label htmlFor="due"><b>Due Date</b></label>
                 <input
