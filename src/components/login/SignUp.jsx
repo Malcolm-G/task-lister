@@ -3,7 +3,7 @@ import "../../stylesheets/SignUp.css"
 import { useNavigate } from "react-router-dom";
 import { UserContext } from "../UserDataProvider";
 
-const API = "https://charity-users-db.vercel.app/users"
+// const API = "https://charity-users-db.vercel.app/users"
 
 function SignUp({users,setUsers}){
 
