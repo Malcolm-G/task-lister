@@ -73,7 +73,7 @@ function UpdateTodoForm(props) {
 
 
                 <div className="clearfix">
-                <button type="submit" className=".log-signupbtn">Update Project</button>
+                <button type="submit" className=".log-signupbtn">Update Todo</button>
                 <button type="button" className=".log-cancelbtn bg-danger" onClick={cancelClicked} >Cancel</button>
                 </div>
             </div>

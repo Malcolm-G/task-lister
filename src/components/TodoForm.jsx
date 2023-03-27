@@ -49,7 +49,7 @@ function TodoForm(props) {
 
 
                 <div className="clearfix">
-                <button type="submit" className=".log-signupbtn">Create Project</button>
+                <button type="submit" className=".log-signupbtn">Create Todo</button>
                 <button type="button" className=".log-cancelbtn bg-danger" onClick={cancelClicked} >Cancel</button>
                 </div>
             </div>

@@ -138,7 +138,7 @@ function TodoRow({todo,index}) {
           <td>
             <button
             onClick={()=>{
-                if(window.confirm('Are you sure you wish to delete this project?')){
+                if(window.confirm('Are you sure you wish to delete this todo?')){
                     deleteTodo()
                 }
             }}
