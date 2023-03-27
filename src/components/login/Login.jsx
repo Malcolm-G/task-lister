@@ -18,9 +18,14 @@ function Login({users,setIsLoggedIn,setCurrentUser}){
 
     function loginClicked(e){
         e.preventDefault()
-        setUser(user=>user = {username:username})
-        localStorage.setItem('user', JSON.stringify(user))
-        navigate('/')
+        if (username){
+            setUser(user=>user = {username:username})
+            localStorage.setItem('user', JSON.stringify(user))
+            navigate('/')
+        }
+        else{
+            window.alert("Input a username")
+        }
     }
 
     return(
