@@ -6,7 +6,7 @@ import '../stylesheets/App.css';
 import Login from './login/Login';
 import SignUp from './login/SignUp';
 // import LandingPage from './LandingPage';
-// import MyProjects from './MyProjects';
+import MyTodos from './MyTodos';
 // import ProjectForm from './ProjectForm';
 // import UpdateProjectForm from './UpdateProjectForm';
 
@@ -23,6 +23,10 @@ function App() {
         <Route
         path="/signup"
         element={<SignUp />}
+        />
+        <Route
+        path="/my-todos"
+        element={<MyTodos/>}
         />
       </Routes>
     </div>
