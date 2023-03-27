@@ -12,6 +12,7 @@ function TodoRow({todo,index}) {
     // const isOwner = project.project_owner_id == user.id
     
     const [statusClass,setStatusClass] = useState('')
+    const [priorityClass,setPriorityClass] = useState('')
     const [newStatus,setNewStatus] = useState(`${todo?.status}`)
     const [newPriority,setNewPriority] = useState(`${todo?.priority}`)
     // const [members,setMembers] = useState([])
@@ -39,18 +40,18 @@ function TodoRow({todo,index}) {
 
         switch(todo.priority){
             case 'LOW':
-                setStatusClass("badge bg-success")
+                setPriorityClass("badge bg-success")
             break;
             case 'MEDIUM':
-                setStatusClass("badge bg-warning") 
+                setPriorityClass("badge bg-warning") 
             break;
             case 'HIGH':
-                setStatusClass("badge bg-danger")
+                setPriorityClass("badge bg-danger")
             break;
             default:
-                setStatusClass("badge")
+                setPriorityClass("badge")
         }
-    },[])
+    },[todo])
 
     function updateTodo(){
         navigate(`/update-project-form/${project.id}`)
@@ -105,13 +106,13 @@ function TodoRow({todo,index}) {
                 changePriority(e)
             }}
             value={newPriority}
-            className={`${statusClass} border-0 text-dark`}
-            name="status" id="status-dropdown">
+            className={`${priorityClass} border-0 text-dark`}
+            name="status" id="priority-dropdown">
                 <option value="LOW" >LOW</option>
                 <option value="MEDIUM" >MEDIUM</option>
                 <option value="HIGH" >HIGH</option>
             </select>
-            {todo.priority}
+            {/* {todo.priority} */}
           </td>
           <td className=''>
             <select onChange={(e)=>{
@@ -126,7 +127,7 @@ function TodoRow({todo,index}) {
                 <option value="CANCELLED" >CANCELLED</option>
                 <option value="COMPLETED" >COMPLETED</option>
             </select>
-            {todo.status}
+            {/* {todo.status} */}
           </td>
           <td>
             <button
