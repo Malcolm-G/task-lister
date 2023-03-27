@@ -3,6 +3,7 @@ import { Route,Routes } from 'react-router-dom';
 import reactLogo from '../assets/react.svg'
 import viteLogo from '/vite.svg'
 import '../stylesheets/App.css';
+import Navbar from './Navbar';
 import Login from './login/Login';
 import SignUp from './login/SignUp';
 import LandingPage from './LandingPage';
@@ -15,6 +16,7 @@ function App() {
 
   return (
     <div className="App">
+      <Navbar />
       <Routes>
         <Route
           exact path="/"
